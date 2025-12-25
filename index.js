@@ -11,3 +11,24 @@
 // "K": 3,700 K - 5,199 K
 // "M": 0 K - 3,699 K
 // Return the classification of the given star.
+
+function classification(temp) {
+  console.log(temp);
+
+  if (temp >= 30_000) {
+    return 'O';
+  } else if (temp >= 10_000) {
+    return 'B';
+  } else if (temp >= 7_500) {
+    return 'A';
+  } else if (temp >= 6_000) {
+    return 'F';
+  } else if (temp >= 5_200) {
+    return 'G';
+  } else if (temp >= 3_700) {
+    return 'K';
+  } else {
+    return 'M';
+  }
+  return temp;
+}
